@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HTML Forms & Tables</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
 </head>
 
 <body>
@@ -34,37 +34,37 @@
                     <th>Last Name</th>
                     <th>ID</th>
                     <th>Title</th>
-                    <th>Annaula Salary</th>
+                    <th>Annual Salary</th>
                     <th>Delete Table Row</th>
 
                    
 
                 </tr>
             </thead>
-            <tbody id="temperatureData">
+            <tbody id="EmployeeData">
                 <tr>
-                    <td>0</td>
-                    <td>39</td>
-                    <td>100</td>
-                    <td>0</td>
-                    <td>2024-06-04</td>
+                    <td>Jen</td>
+                    <td>Barber</td>
+                    <td>4521</td>
+                    <td>Title</td>
+                    <td>$80,000</td>
                     <td><button class="delete-btn" onclick="deleteTableRow()">Delete</button></td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>41</td>
-                    <td>38</td>
-                    <td>0</td>
-                    <td>2024-03-15</td>
+                    <td>Maurice</td>
+                    <td>Moss</td>
+                    <td>8724</td>
+                    <td>Support Team</td>
+                    <td>$58,000</td>
                     <td><button class="delete-btn" onclick="deleteTableRow()">Delete</button></td>
                  
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>41</td>
-                    <td>48</td>
-                    <td>9</td>
-                    <td>2024-05-15</td>
+                    <td>Roy</td>
+                    <td>Smith</td>
+                    <td>9623</td>
+                    <td>Quality Assurance</td>
+                    <td>$48,000</td>
                     <td><button class="delete-btn" onclick="deleteTableRow()">Delete</button></td>
                  
                 </tr>
@@ -74,11 +74,11 @@
             </tbody>
         </table>
         <div>
-            <h3>Record High: <span id="high-temp">41</span></h3>
+            <h3>Total Monthly: <span id="Total-Monthly">41</span></h3>
         </div>
     </div>
     
-    <script src="client.js"></script>
+    <script src="scripts/client.js"></script>
 </body>
 
 </html>
