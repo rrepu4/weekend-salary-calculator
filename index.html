@@ -16,25 +16,25 @@
     <h2> Add Employee</h2>
     <div id="content">
         <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date -->
-        <form class="weather-form" onSubmit="submitForm(event)">
-            First Name: <input id="temp-input" type="text" placeholder="First Name" required/><br />
-            Last Name: <input id="humid-input" type="number" required/><br />
-            ID: <input type="number" id="windspeed-input" required><br>
-            Title: <input id="date-input" type="date"  required/><br />
-            Annual Salary: <input id="date-input" type="date"  required/><br /><br>
+        <form class="Employee-form" onSubmit="submitForm(event)">
+            First Name: <input id="FirstName-input" type="text" placeholder="First Name" required/><br />
+            Last Name: <input id="LastName-input" type="text" placeholder="Last Name"  required/><br />
+            ID: <input id="ID-input" type="number" placeholder=" ID " required><br>
+            Title: <input id="Title-input" type="text" placeholder="Tile" required/><br />
+            Annual Salary: <input id="AnnualSalary-input" type="number" placeholder="Annual Salary" required/><br /><br>
           <button type="submit">Submit</button> <br><br>
 
 
         </form >
-        <table id="customers">
+        <table id="Employees">
             <!-- Table heading displays the descriptions -->
             <thead>
                 <tr>
-                   <th>Index</th>
-                    <th>Temp</th>
-                    <th>Humidity</th>
-                    <th>Windspeed</th>
-                    <th>Date</th>
+                   <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Annaula Salary</th>
                     <th>Delete Table Row</th>
 
                    
