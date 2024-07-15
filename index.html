@@ -1,20 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Salary Calculator</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML Forms & Tables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Salary Calculator</h1>
-  </header>
-  <main>
-    <h2>Add Employee</h2>
-    <h2>Employees</h2>
-  </main>
-  <footer>
-    <p>Total Monthly</p>
-  </footer>
+    <header>
+        <h1>Salary Calculator</h1>
+    </header>
+    <h2> Add Employee</h2>
+    <div id="content">
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date -->
+        <form class="weather-form" onSubmit="submitForm(event)">
+            First Name: <input id="temp-input" type="text" placeholder="First Name" required/><br />
+            Last Name: <input id="humid-input" type="number" required/><br />
+            ID: <input type="number" id="windspeed-input" required><br>
+            Title: <input id="date-input" type="date"  required/><br />
+            Annual Salary: <input id="date-input" type="date"  required/><br /><br>
+          <button type="submit">Submit</button> <br><br>
+
+
+        </form >
+        <table id="customers">
+            <!-- Table heading displays the descriptions -->
+            <thead>
+                <tr>
+                   <th>Index</th>
+                    <th>Temp</th>
+                    <th>Humidity</th>
+                    <th>Windspeed</th>
+                    <th>Date</th>
+                    <th>Delete Table Row</th>
+
+                   
+
+                </tr>
+            </thead>
+            <tbody id="temperatureData">
+                <tr>
+                    <td>0</td>
+                    <td>39</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>2024-06-04</td>
+                    <td><button class="delete-btn" onclick="deleteTableRow()">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>41</td>
+                    <td>38</td>
+                    <td>0</td>
+                    <td>2024-03-15</td>
+                    <td><button class="delete-btn" onclick="deleteTableRow()">Delete</button></td>
+                 
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>41</td>
+                    <td>48</td>
+                    <td>9</td>
+                    <td>2024-05-15</td>
+                    <td><button class="delete-btn" onclick="deleteTableRow()">Delete</button></td>
+                 
+                </tr>
+
+                <!-- innerHTML -->
+                 
+            </tbody>
+        </table>
+        <div>
+            <h3>Record High: <span id="high-temp">41</span></h3>
+        </div>
+    </div>
+    
+    <script src="client.js"></script>
 </body>
+
 </html>
